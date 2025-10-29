@@ -196,6 +196,9 @@ SIMPLE_JWT = {
 }
 
 # --------------------------------ERROR--DEBUG--LOGS-------------------------------------------
+STORAGE_FOLDER = 'storage/logs/'
+os.makedirs(STORAGE_FOLDER, exist_ok=True)
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": True,
