@@ -10,7 +10,7 @@ from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 class TBDeviceCreateAPIView(CreateAPIView):
     authentication_classes = [CustomJWTAuthentication]
     permission_classes = [InternalPermission]
-    parser_classes = [MultiPartParser, FormParser, JSONParser]
+    parser_classes = [MultiPartParser, FormParser, JSONParser]  # if u have file, use FormParser or MultiPartParser
     serializer_class = TBDeviceCreateSerializer
     queryset = TBDevice.objects.all()
    
