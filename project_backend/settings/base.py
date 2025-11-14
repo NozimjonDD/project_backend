@@ -120,6 +120,9 @@ REST_FRAMEWORK = {
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
     "PAGE_SIZE": 10,
+
+    # # Custom exception handler
+    # 'EXCEPTION_HANDLER': 'apps.api.v1.admin.common.exception_handler.custom_exception_handler',
 }
 # --------------------------------------------------------------------
 LANGUAGE_CODE = 'uz'
