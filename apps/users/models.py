@@ -1,13 +1,10 @@
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from django.db import models
-from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from apps.common import validators as common_validators
-from apps.common.choices import UserRoleTypes, UserOTPTypes
-from apps.users import utils as user_utils
-from project_backend.models import BaseModel
-from django.conf import settings
+from apps.common.choices import UserRoleTypes
+from apps.common.base_models import BaseModel
 
 
 class User(AbstractUser, BaseModel):

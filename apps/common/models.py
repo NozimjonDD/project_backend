@@ -1,7 +1,7 @@
 from django.db import models
 
 from django.utils.translation import gettext_lazy as _
-from project_backend.models import BaseModel
+from apps.common.base_models import BaseModel
 
 
 class Region(BaseModel):
